@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Álvaro Eduardo Morales Linares}
+\title{UNIVERSIDAD DE EL SALVADOR\\ Facultad Multidisciplinaria de Occidente\\ Departamento de Matemáticas}
+\date{\today}
+\usepackage{Sweave}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+\newpage
+
+a) es mas liviano al cargar archivos tiene mas recursos complementarios a comparacion de spss y excel
+  
+b)
+version nueva
+available Here
+version anterior
+smooth sidewalk
+3.1.3
+version que esta por salir
+3.2.2
+fire safety
+c) disminuyen los dos ultimos dos numeros y el primer numero se mantiene
+<<>>=
+#problema2
+C<-matrix(c(3,-1,3,4,1,5,2,1,3),nrow=3,ncol=3)
+C         
+t(C)
+E<-matrix(c(2,-4,5,0,1,4,3,2,1),nrow=3,ncol=3)
+E
+t(E)
+F<-t(C)+t(E)
+F
+D<-t(E)+t(C)
+D
+A<-matrix(c(1,2,3,2,1,4),nrow=2,byrow=3)
+A
+B<-matrix(c(1,0,2,1,3,2),nrow=3,byrow=2)
+B
+d<-matrix(c(3,-2,2,4),nrow=2,ncol=2)
+d
+t(d)
+x<-matrix(c(-4,5,2,3),nrow=2,ncol=2)
+x
+t(x)
+#problema3
+A<-matrix(c(2,3,4,3,3,2,2,5,4,1,6,4),nrow=3,byrow=4)
+A
+B<-matrix(c(20,12,8,28,15,15,30,12,10,40,16,20),nrow=4,byrow=3)
+B
+P <- A %*% B
+P
+#problema5
+url<-"http://www.jaredlander.com/data/Tomato%20First.csv"
+Tomate<-read.table(file=url,header=TRUE,sep=",")
+Tomate
+@
+\end{document}
+
